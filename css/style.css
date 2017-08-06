@@ -1,0 +1,107 @@
+form {
+             max-width: 800px;
+              margin: 15px auto;
+              padding-top: 20px;
+
+            }
+
+
+    .form-control{
+        margin: 15px auto;
+        width: 80%;
+
+    }
+
+
+    table{
+       font-size: 13px;
+       text-align: center;
+      }
+
+    th {
+     text-align: center;
+   }
+      
+  @media screen and (max-width: 540px) {
+      .table {
+        font-size: 8px;
+      }
+
+    }
+
+            .row{
+                margin: 15px auto;
+                text-align: center;
+              }
+            
+      form button.small {
+                  padding: 8px 17px;
+              }
+#phonebook {
+  margin: 0 auto;
+}
+#phonebook button.tiny {
+  margin-bottom: 0;
+  padding: 5px 10px;
+}
+
+
+.seve{
+      background: aqua;
+      border-radius: 15px;
+      border: 2px solid black;
+      margin: 15px;
+ }
+
+
+.seve:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+.seve:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+
+.dob{
+      padding: 6px;
+  margin: 15px;
+      background:#0c9c0d;
+       color: rgb(245,245,245);
+      border-radius: 19px;
+      border-color:black;
+    border: 2px solid #F64C2B;
+}
+
+.dob:hover  { background: rgb(53, 167, 110);}
+.dob:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+
+form .ng-pristine {
+            border: 1px dotted gray;
+        }
+
+        /* Данное правило распространяется на все элементы с которыми взаимодействовал прользователь и которые не прошли проверку */
+        form .ng-invalid.ng-dirty {
+            background-color: lightpink;
+        }
+
+        /* Правило для всех элементов, которые прошли проверку после взаимодействия с пользователем */
+        form .ng-valid.ng-dirty {
+            background-color: lightgreen;
+        }
+
+        /* класс, который присваивает оформление для неправильно заполненных полей для email */
+        form .ng-invalid-email {
+            color: red;
+        }
+
+        /*
+            Валидация происходит после каждого изменения в форме.
+            Два следующих правила используются для элемента span в конце формы.
+        */
+        span.summary.ng-invalid {
+            color: red;
+            font-weight: bold;
+        }
+
+        span.summary.ng-valid {
+            color: green;
+        }
+
+

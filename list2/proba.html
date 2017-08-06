@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" >
+<head>
+    <title>Date Filter</title>
+    <script src="../Libraries/angular.js"></script>
+      <link href="../Libraries/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Libraries/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="../js/loadscript.js"></script>
+
+</head>
+<body>
+
+
+<form name="myForm" novalidate >
+
+    <div ng-app="app" ng-controller="phonebookCtrl">
+  
+
+
+
+   <div class="alert alert-info">
+    <p>Сортировка по: {{ sortType }}</p>
+    <p>Обратная сортировка: {{ sortReverse }}</p>
+    <p>Поиск: {{ searchName }}</p>
+
+ 
+  </div>
+
+
+
+  
+    <div class="forma">
+      <div class="input-group">
+      
+        
+        <input type="text" class="form-control" novalidate placeholder="Поиск по ФИО" ng-model="searchName">
+      </div>      
+    </div>
+
+
+  <div class="panel panel-primary">
+
+        <div class="panel-heading">
+            <h3>
+                Number of contacts
+                <span class="label label-info">{{phonebook.length}}</span>
+            </h3>
+        </div>
+       
+
+
+ <table class="table table-condensed table-bordered table-hover table-responsive">
+  
+  
+<thead>
+
+  <tr>
+  
+  
+      <th>   №</th> 
+    
+
+      <th>
+          <a href="" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+            ФИО
+            <span ng-show="sortType == 'name' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'name' && sortReverse" class="fa fa-caret-up"></span>
+          </a>
+      </th>
+    
+
+    
+      <th>№ телефона</th>
+    
+
+
+    
+        <th>Эл. почта</th>
+  </tr> 
+  
+</thead>
+
+
+
+     
+<tbody>
+
+
+  <tr ng-repeat="person in phonebook | orderBy:sortType:sortReverse | filter:searchName">
+  
+          <td>{{ $index + 1 }}</td>
+    
+        <td>{{ person.name }}   
+        </td>
+    
+      <td>{{ person.phone }}</td>
+    
+        <td>{{ person.email }}</td>
+    
+  </tr>
+</tbody>
+
+</table>
+</div>
+
+    
+
+    </div>
+
+      
+</form>  
+
+
+
+
+</body>
+</html>

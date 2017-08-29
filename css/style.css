@@ -103,5 +103,8 @@ form .ng-pristine {
         span.summary.ng-valid {
             color: green;
         }
-
+      div.error {
+            color: red;
+            font-weight: bold;
+        }
 

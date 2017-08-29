@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app="app" >
 <head>
     <title>Date Filter</title>
@@ -24,6 +24,14 @@
     <p>Сортировка по: {{ sortType }}</p>
     <p>Обратная сортировка: {{ sortReverse }}</p>
     <p>Поиск: {{ searchName }}</p>
+    <p>Категория: {{ findName }}</p>
+
+
+    <ul class="nav nav-pills">
+  <li class="active"><a href="../index.html">Редактировать контакты</a></li>
+ </ul>
+
+ <button type="btn-button"  ng-click="showCum()">Cum</button>
 
  
   </div>
@@ -36,7 +44,8 @@
       
         
         <input type="text" class="form-control" novalidate placeholder="Поиск по ФИО" ng-model="searchName">
-      </div>      
+      </div>  
+
     </div>
 
 
@@ -70,14 +79,21 @@
           </a>
       </th>
     
-
-    
       <th>№ телефона</th>
     
-
-
-    
         <th>Эл. почта</th>
+        <th>
+        <a href="" ng-click="sortType = 'category'; sortReverse = !sortReverse">
+        Категория
+        <span ng-show="sortType == 'category' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'category' && sortReverse" class="fa fa-caret-up"></span>
+        </th>
+          <th>
+          <a href="" ng-click="sortType = 'date'; sortReverse = !sortReverse">
+          Дата рождения
+          <span ng-show="sortType == 'date' && !sortReverse" class="fa fa-caret-down"></span>
+            <span ng-show="sortType == 'date' && sortReverse" class="fa fa-caret-up"></span>
+            </th>
   </tr> 
   
 </thead>
@@ -88,9 +104,9 @@
 <tbody>
 
 
-  <tr ng-repeat="person in phonebook | orderBy:sortType:sortReverse | filter:searchName">
+  <tr ng-repeat="person in phonebook | orderBy:sortType:sortReverse | filter:searchName | filter:findName " >
   
-          <td>{{ $index + 1 }}</td>
+          <td>{{ $index + 1 }}</td>         
     
         <td>{{ person.name }}   
         </td>
@@ -98,6 +114,8 @@
       <td>{{ person.phone }}</td>
     
         <td>{{ person.email }}</td>
+        <td>{{ person.category }}</td>
+          <td>{{takeDay(person.date) | date : 'd MMM  y'}}</td>
     
   </tr>
 </tbody>

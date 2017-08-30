@@ -13,15 +13,12 @@
    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"--> 
   
     <!--link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"-->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
    
 
 	<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
    <script src="js/loadscript.js"></script>
-
-    
-   
-
 
 </head>
 <body>
@@ -48,9 +45,6 @@
                     </div>
 			</div>
 			
-    			
-
-	
 			<div class="form-group">
 				<label>Tel number "(xxx) xxx-xxx", min-7:</label>
 			<input name="personPhone" class="form-control" type="tel"   ng-model="phone"  ng-minlength="7"  required placeholder="№ телефонна нового абонента" />
@@ -65,8 +59,6 @@
 
 			</div>
 		
-
-	 
 			<div class="form-group">
                     <label>Email (min-4):</label>
 			<input name="personEmail" class="form-control" ng-model="email" type="email" required ng-minlength="4"  placeholder="E-mail нового абонента" />
@@ -98,9 +90,9 @@
             <div class="form-group">
                         <label for="addDate" class="form-group">date</label>
                        
-                            <input name="personDate" type="text" name="addDate" class="form-control" id="addDate" ng-model="date"ng-pattern="/\d\d\d\d/\d\d/\d\d/" 
+                            <input name="personDate" type="text" name="addDate" class="form-control" id="addDate" ng-model="date" ng-pattern="/\d\d\d\d/\d\d/\d\d/" 
                              
-                            placeholder="YYYY/MM/DD - 1998/05/14" required/>
+                            placeholder="YYYY/MM/DD - 2017/08/03" required/>
 
                            
                             <div class="error" ng-show="myForm.personDate.$invalid && myForm.personDate.$dirty">
@@ -137,10 +129,14 @@
                     </span>
                 </div>
             </div>
+			
+			
 
 <ul class="nav nav-pills">
   <li class="active"><a href="list2/proba.html">Сортировка и поиск</a></li>
  </ul>
+ 
+
 
 
 	</div>
@@ -179,8 +175,14 @@
     
 				<td>
 			
-				<button class="btn btn-primary" href='' ng-click="editPerson($index)">Edit</button>
-				<button class="btn btn-danger"  href='' ng-click="deletePerson($index)">Delete</button>
+				<button class="btn btn-primary" href='' ng-click="editPerson($index)">
+				<span class="hideIcon">Edit</span><span class="displayIcon">
+				<i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+				
+				</button>
+				<button class="btn btn-danger"  href='' ng-click="deletePerson($index)">
+				<span class="hideIcon">Delete</span><span class="displayIcon">
+				<i class="fa fa-times" aria-hidden="true"></i></span></button>
 
 			
 		</td>
@@ -194,9 +196,6 @@
     
 </form>  
 
-
-
-
-
 </body>
 </html>
+

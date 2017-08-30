@@ -1,4 +1,4 @@
-  var app = angular.module( 'app', [] )
+ var app = angular.module( 'app', [] )
 .controller('phonebookCtrl', function( $scope ){
 
   
@@ -11,10 +11,10 @@
 	{ name: 'Philly bron', phone: '+123-456-789-123', email: 'philli@bron.ia', category:"Коллега", date:"1963/11/15"},
 	{ name: 'Tiger forse', phone: '+365-125-888-589', email: 'tigery@forse.com', category:"Леди", date:"1986/12/03"},
 	{ name: 'Rainbow darc', phone: '+985-052-5895-489', email: 'rainbow@dark.ea', category:"Брат", date:"1945/10/02"},
-	{ name: 'Shvarc arnold', phone: '+888-777-888-444', email: 'shvarc@arnold.us', category:"Cum", date:"1951/09/29"},
+	{ name: 'Shvarc arnold', phone: '+888-777-888-444', email: 'shvarc@arnold.us', category:"Кум", date:"1951/09/29"},
 	{ name: 'brus wilis', phone: '+896-568-872-173', email: 'brus@willis.ua', category:"Друг", date:"1962/08/18"},
 	{ name: 'Chac noris', phone: '+258-238-796-110', email: 'chac@noris.ia', category:"Друг", date:"1955/06/09"},
-	{ name: 'sivester stalones', phone: '+347-46-206-186', email: 'sivestr@stalones.com', category:"Cum", date:"1956/07/08"},
+	{ name: 'sivester stalones', phone: '+347-46-206-186', email: 'sivestr@stalones.com', category:"Кум", date:"1956/07/08"},
 	{ name: 'Ozzy ozbourn', phone: '+314-75-710-189', email: 'Ozzy@ozbourn.ua', category:"Коллега", date:"1947/05/12"},
 	{ name: 'Jackie chan', phone: '+856-987-878-432', email: 'Jackie@chan.us', category:"Брат", date:"1963/04/31"},
 
@@ -27,8 +27,27 @@
 
 
      $scope.showCum = function () {
-               $scope.findName='Cum'
+               $scope.findName='Кум'
               
+    };
+	
+	$scope.showAll = function () {
+        $scope.findName="";
+    };
+	
+	$scope.showBrother = function () {
+        $scope.findName="Брат";
+    };
+	$scope.showColegue = function () {
+        $scope.findName="Коллега";
+    };
+	
+	$scope.showFriend = function () {
+        $scope.findName="Друг";
+    };
+	
+	$scope.showLedies = function () {
+        $scope.findName="Леди";
     };
 
   $scope.addNewPerson = function() {

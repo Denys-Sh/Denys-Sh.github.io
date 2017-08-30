@@ -7,7 +7,7 @@ form {
 
 
     .form-control{
-        margin: 15px auto;
+        margin: 0px auto;
         width: 80%;
 
     }
@@ -107,4 +107,40 @@ form .ng-pristine {
             color: red;
             font-weight: bold;
         }
+		.displayIcon{
+					display:none;
+				}
+		
+		
+		 @media screen and (max-width: 540px) {
+		.btn-warning{
+			font-size: 11px;
+		}
+		.btn-success{
+			font-size: 10px;
+		}
+		.btn-info{
+			font-size: 11px;
+		}
+		 .hideIcon{
+				display:none;
+				}
+			.displayIcon{
+					display:inline-block;
+				}
+				}
 
+         @media screen and (max-width: 400px) {
+    .btn-warning{
+      font-size: 8px;
+    }
+    .btn-success{
+      font-size: 8px;
+    }
+    .btn-info{
+      font-size: 8px;
+    }
+
+    .table {
+        font-size: 6px;
+      }

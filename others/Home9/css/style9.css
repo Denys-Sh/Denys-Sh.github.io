@@ -1,0 +1,290 @@
+@charset "UTF-8";
+@font-face {
+  font-family: PTSans_Bold;
+  src: url("../fonts/PT_Sans/PT_Sans-Web-Bold.ttf");
+}
+
+@font-face {
+  font-family: PTSans_Regular;
+  src: url("../fonts/PT_Sans/PT_Sans-Web-Regular.ttf");
+}
+
+/* line 14, D:/front-end/домашка9/готовое/scss/style9.scss */
+body {
+  font-family: PTSans_Bold, sans-serif;
+}
+
+/* line 17, D:/front-end/домашка9/готовое/scss/style9.scss */
+.first {
+  background-color: #fcdb00;
+  padding-left: 100px;
+  font-family: PTSans_Bold, sans-serif;
+}
+
+/* line 23, D:/front-end/домашка9/готовое/scss/style9.scss */
+.van {
+  margin-top: 52px;
+}
+
+/* line 27, D:/front-end/домашка9/готовое/scss/style9.scss */
+.two {
+  margin-top: 60px;
+}
+
+/* line 31, D:/front-end/домашка9/готовое/scss/style9.scss */
+.image {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+/* line 37, D:/front-end/домашка9/готовое/scss/style9.scss */
+.van {
+  /*position: relative;
+  top: 0;
+  left: 0;*/
+  /*font-family: $font1;*/
+  font-size: 30px;
+  /*vertical-align: middle;
+  margin-left: 28px;*/
+}
+
+/*.border{
+  border:1px solid black;
+}*/
+/*.cover-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}*/
+/* line 58, D:/front-end/домашка9/готовое/scss/style9.scss */
+.pull-right a {
+  display: inline-block;
+  color: #000000;
+  font-size: 22px;
+}
+
+/* line 64, D:/front-end/домашка9/готовое/scss/style9.scss */
+.pull-right {
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 64, D:/front-end/домашка9/готовое/scss/style9.scss */
+  .pull-right {
+    margin-top: 50px;
+  }
+}
+
+/* line 70, D:/front-end/домашка9/готовое/scss/style9.scss */
+.pull-right li {
+  display: inline-block;
+  margin-right: 70px;
+  background-color: #fcdb00;
+  padding-left: 100px;
+  font-family: PTSans_Bold, sans-serif;
+}
+
+@media (max-width: 768px) {
+  /* line 70, D:/front-end/домашка9/готовое/scss/style9.scss */
+  .pull-right li {
+    margin-right: 14%;
+  }
+}
+
+/* line 80, D:/front-end/домашка9/готовое/scss/style9.scss */
+.pull-right li:last-child {
+  margin-right: 0;
+}
+
+/* line 85, D:/front-end/домашка9/готовое/scss/style9.scss */
+.winda {
+  margin-top: 75px;
+  padding: 0 70px 0 22px;
+  /* @media  (max-width: 992px) {
+    margin-top: 0;
+    padding-right: 20px;
+  }*/
+}
+
+@media (max-width: 768px) {
+  /* line 85, D:/front-end/домашка9/готовое/scss/style9.scss */
+  .winda {
+    margin-bottom: 50px;
+    padding: 0 10px 25px 10px;
+  }
+}
+
+/* line 98, D:/front-end/домашка9/готовое/scss/style9.scss */
+.winda h2, .winda h4, .winda p {
+  /*padding: 0 70px 0 7px;*/
+}
+
+/* line 101, D:/front-end/домашка9/готовое/scss/style9.scss */
+.winda h4, .winda p {
+  font-family: PTSans_Regular, sans-serif;
+}
+
+/* line 104, D:/front-end/домашка9/готовое/scss/style9.scss */
+.winda h2 {
+  margin: 0 0 27px 0;
+}
+
+/* line 107, D:/front-end/домашка9/готовое/scss/style9.scss */
+.winda h4 {
+  font-size: 20px;
+  margin: 0 0 27px 0;
+}
+
+/* line 111, D:/front-end/домашка9/готовое/scss/style9.scss */
+.winda p {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 42px;
+}
+
+/* line 117, D:/front-end/домашка9/готовое/scss/style9.scss */
+.phone {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 17px;
+}
+
+/* line 124, D:/front-end/домашка9/готовое/scss/style9.scss */
+.icons {
+  font-size: 40px;
+  padding-left: 7px;
+}
+
+/* line 127, D:/front-end/домашка9/готовое/scss/style9.scss */
+.icons i {
+  margin-right: 38px;
+}
+
+/* line 133, D:/front-end/домашка9/готовое/scss/style9.scss */
+.tri {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+/* line 137, D:/front-end/домашка9/готовое/scss/style9.scss */
+.carusel1, .carusel2, .carusel3 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ffffff;
+  margin-right: 8px;
+}
+
+/* line 148, D:/front-end/домашка9/готовое/scss/style9.scss */
+.carusel2, .carusel3 {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* line 153, D:/front-end/домашка9/готовое/scss/style9.scss */
+.wite_first {
+  margin-top: 120px;
+}
+
+/* line 155, D:/front-end/домашка9/готовое/scss/style9.scss */
+.wite_first h2 {
+  margin: 0;
+}
+
+/* line 158, D:/front-end/домашка9/готовое/scss/style9.scss */
+.wite_first h4 {
+  margin: 25px 0 90px;
+  line-height: 25px;
+}
+
+/* line 164, D:/front-end/домашка9/готовое/scss/style9.scss */
+.fully_responsive {
+  margin-bottom: 78px;
+}
+
+/* line 166, D:/front-end/домашка9/готовое/scss/style9.scss */
+.fully_responsive h3 {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+/* line 170, D:/front-end/домашка9/готовое/scss/style9.scss */
+.fully_responsive p {
+  color: #555555;
+}
+
+/* line 175, D:/front-end/домашка9/готовое/scss/style9.scss */
+.footer {
+  background: #010101;
+}
+
+/* line 179, D:/front-end/домашка9/готовое/scss/style9.scss */
+.foot_first h2 {
+  color: #fcdb00;
+  margin: 100px 0 25px;
+}
+
+/* line 183, D:/front-end/домашка9/готовое/scss/style9.scss */
+.foot_first h4 {
+  color: #555b5C;
+  font-size: 20px;
+}
+
+/* line 190, D:/front-end/домашка9/готовое/scss/style9.scss */
+.email {
+  margin: 44px 0 80px;
+  padding-left: 32px !important;
+  padding-right: 28px !important;
+  height: 50px !important;
+}
+
+/* line 198, D:/front-end/домашка9/готовое/scss/style9.scss */
+input[type="submit"] {
+  margin-top: 44px;
+  height: 50px;
+  background: #fcdb00;
+  width: 100%;
+  font-family: PTSans_Bold, sans-serif;
+  color: black;
+  border: 0;
+}
+
+/* line 209, D:/front-end/домашка9/готовое/scss/style9.scss */
+.social li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 32px;
+  font-size: 26px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  /* line 209, D:/front-end/домашка9/готовое/scss/style9.scss */
+  .social li {
+    margin-right: 15px;
+  }
+}
+
+/* line 220, D:/front-end/домашка9/готовое/scss/style9.scss */
+.social li a {
+  /*list-style: none;*/
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #fcdb00;
+  border-radius: 5px;
+  color: black;
+  /*:before{
+      content: "";
+    }*/
+}
+
+/* line 234, D:/front-end/домашка9/готовое/scss/style9.scss */
+.lost {
+  color: white;
+  margin-top: 135px;
+}
+
+/*# sourceMappingURL=../css/style9.map */
